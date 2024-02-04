@@ -19,7 +19,7 @@ export function Register() {
                };
           // Create the POST requuest
           const {data} = await                                                                            
-                         axios.post('http://localhost:8000/register/',
+                         axios.post('https://djangosleepapp.onrender.com/register/',
                          user, {headers: {'Content-Type': 'application/json'}},
                          {withCredentials: true});
           if(data == null) {

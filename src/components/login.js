@@ -22,7 +22,7 @@ export function Login() {
                };
           // Create the POST requuest
           const {data} = await                                                                            
-                         axios.post('http://localhost:8000/token/',
+                         axios.post('https://djangosleepapp.onrender.com/token/',
                          user, {headers: {'Content-Type': 'application/json'}},
                          {withCredentials: true})
           if(data == null) {
